@@ -1,0 +1,34 @@
+<svg id="main-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.552 70.273">
+<g id="profile" class="out">
+
+	<polygon fill="#DDDEDF" points="235.107,0 169.47,0 169.47,60.182 179.558,70.27 182.333,70.27 182.332,70.273 235.464,70.273 
+		245.552,60.182 245.552,10.447 	"/>
+	<text x="174" y="52">Profile</text>	
+<g class="elip">
+	<circle cx="177.738" cy="21.292" r="2.045"/>
+	<circle cx="177.738" cy="14.848" r="2.045"/>
+	<circle cx="177.738" cy="8.401" r="2.045"/>
+</g>
+</g>
+
+<g id="resources" class="out">
+	<polygon fill="#DDDEDF" points="152.412,0 83.004,0 83.004,60.182 93.093,70.27 95.867,70.27 95.866,70.273 152.771,70.273 
+		162.859,60.182 162.859,10.447 	"/>
+		<text x="87" y="52">Resources</text>
+		<g class="elip">
+	<circle cx="91.272" cy="21.292" r="2.045"/>
+	<circle cx="91.272" cy="14.848" r="2.045"/>
+	<circle cx="91.272" cy="8.401" r="2.045"/>
+</g>
+</g>
+<g id="portfolio" class="out">
+	<polygon fill="#DDDEDF" points="65.636,0 0,0 0,60.182 10.089,70.27 12.864,70.27 12.862,70.273 65.994,70.273 76.083,60.182 
+		76.083,10.447 	"/>
+		<text x="4" y="52">Portfolio</text>
+		<g class="elip">
+	<circle cx="8.268" cy="21.292" r="2.045"/>
+	<circle cx="8.268" cy="14.848" r="2.045"/>
+	<circle cx="8.268" cy="8.401" r="2.045"/>
+</g>
+</g>
+</svg>

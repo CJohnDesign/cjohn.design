@@ -1,0 +1,317 @@
+// Logo
+
+#logo-group
+	z-index            			: 100
+	width 						: 7em
+	position 					: absolute
+	bottom  					: 0.5em
+	left 						: 0
+	transition 					: all .8s ease
+
+#logo  	
+	color              			: $g3
+	z-index            			: 100
+	cursor 						: pointer
+	transition 					: all .5s ease
+
+// Main Menu
+
+.menu
+	cursor 						: pointer
+	transition 					: all .8s ease
+	&:hover
+		.elip
+			fill 				: #ffffff
+
+.pointer
+	cursor 						:  pointer
+
+#main-menu
+	position 					: absolute
+	right 						: $right
+	bottom 						: $bottom
+	height 						: 6.5em
+	transition 					: all .8s ease
+	text
+		font-size 				: .85em
+
+#contact-menu
+	position 					: absolute
+	right 						: $right
+	bottom 						: $bottom
+	height 						: 6.5em
+	text
+		font-size 				: 2.18em
+	transition 					: all .8s ease
+
+
+.elip
+	transition 					: all .15s ease
+	fill 						: $g3
+
+.lit
+	fill 						: #ffffff
+
+
+
+// Hire me
+
+#hire-me-et
+	transition 					: all .8s ease
+	position 					: absolute
+	width 						: 12em
+	right 						: 0
+	top 						: $top
+	text
+		font-size 				: 7.5em
+		
+	a
+		&:hover
+			text-decoration 		: none
+	
+
+#hire-me
+	&:hover
+		.elip
+			fill 				: white	
+			transition 			: all .2s ease
+	
+
+.out
+	-ms-transform 				: translate(30px,0px)
+	-webkit-transform 			: translate(30px,0px)
+	transform 					: translate(30px,0px)
+	transition 					: all .8s ease
+	opacity 					: 0
+
+.out-right
+	-ms-transform 				: translate(-30px,0px)
+	-webkit-transform 			: translate(-30px,0px)
+	transform 					: translate(-30px,0px)
+	transition 					: all .8s ease
+	opacity 					: 0
+
+// Main Content
+
+#bio
+	position 					: absolute
+	top 						: 1em
+	left 						: 1em
+	right 						: 15em
+	bottom 						: 10em
+	width 						: 25em
+	overflow 					: scroll
+	:before
+		content 				: ""
+		box-shadow 				: inset 0px -22px 11px 10px #000000
+
+#prof
+	cursor 						: default
+	position 					: absolute
+	width 						: 27em
+	top 						: $top
+	left 						: $left
+	text
+		font-size 				: 3.5em
+		font-weight 			: 900
+		color 					: $g3
+		transition 				: all .8s ease
+	.subhead
+		font-size 				: 2.5em
+		font-weight 			: 300
+
+#port-copy
+	cursor 						: default
+	position 					: absolute
+	width 						: 29em
+	top 						: $top
+	left 						: $left
+	text
+		font-size 				: 3.5em
+		font-weight 			: 900
+		color 					: $g3
+		transition 				: all .8s ease
+	.subhead
+		font-size 				: 2.5em
+		font-weight 			: 300
+
+#bio
+	overflow 					: scroll
+	margin-left 				: $left
+	margin-right 				: $right
+	max-width 					: 40em
+	max-height 					: 25em
+
+#ewe
+	position 					: absolute
+	top 						: 15em
+	width 						: 100%
+	left						: 0
+	transition 					: all .8s ease
+
+#contact-box
+	position 					: absolute
+	right 						: 0
+	bottom 						: 10em
+	height 						: 10em
+	transition 					: all .8s ease
+
+#contact-info 
+	font-size 					: 4.5em
+	font-weight 				: 900
+	color 						: $g3
+	transition 					: all .8s ease
+
+#chris,
+#space,
+#at,
+#c,
+#john,
+#dot,
+#design
+	transition 					: all .8s ease
+	vertical-align 				: super
+	display 					: block
+
+.dim
+	color 						: $g1
+	transition 					: all .8s ease
+	opacity 					: .05
+
+#cjd-logo-box
+	width 						: 14em
+	top 						: $top
+	left 						: $left
+
+#cjd-logo
+	color 						: $g1
+
+.subhead
+	font-size 					: 2.5em
+	font-weight 				: 300
+
+.text-bold
+	font-weight 				: 900
+
+// Responsive
+
+//Mobile styles
+@media (max-width: $screen-sm-max)
+
+	#logo-group
+		width 					: 6em
+		position 				: absolute
+		bottom  				: 0.5em
+		left 					: 0
+	
+	#main-menu
+		right 					: $xs-right
+		bottom 					: $xs-bottom
+		height 					: 5em
+
+	#hire-me-et
+		position 				: absolute
+		width 					: 9.4em
+		right 					: 0
+		top 					: $xs-top
+		text
+			font-size 			: 7.5em
+
+	#contact-menu
+		right 						: $xs-right
+		bottom 						: $xs-bottom
+		height 						: 5em
+		text
+			font-size 				: 2.18em
+
+	#contact-box
+		position 					: absolute
+		right 						: 0
+		bottom 						: 6.3em
+		height 						: 6em
+
+	#contact-info 
+		font-size 					: 4.5em
+		font-weight 				: 900
+		color 						: $g3
+		transition 					: all .8s ease
+
+	#prof
+		width 						: 20em
+		top 						: $xs-top
+		left 						: $xs-left
+		text
+			font-size 				: 3.5em
+			font-weight 			: 900
+			color 					: $g3
+			transition 				: all .8s ease
+		.subhead
+			font-size 				: 2.5em
+			font-weight 			: 300
+
+	#port-copy
+		position 					: absolute
+		width 						: 20em
+		top 						: $xs-top
+		left 						: $xs-left
+		text
+			font-size 				: 3.5em
+			font-weight 			: 900
+			color 					: $g3
+			transition 				: all .8s ease
+		.subhead
+			font-size 				: 2.5em
+			font-weight 			: 300
+
+	#ewe
+		top   						: 17em
+		left						: 0
+		width 						: 100%
+
+	#cjd-logo-box
+		width 						: 9em
+		top 						: $xs-top
+		left 						: $xs-left
+
+
+@media (min-width: $screen-lg-min)
+
+	#ewe
+		top   					: 14.5em
+		left					: 0
+		width 					: 100%
+
+@media (max-height: $height-sm-min )
+
+	#ewe
+		top 					: 5.8em
+
+
+
+//iPhone 5 styles
+@media (max-width: $screen-ip5 )
+
+	#logo-group
+		width 					: 5.23em
+
+	#main-menu
+		height 					: 4.4em
+
+	#hire-me-et
+		width 					: 8.23em
+
+	#prof
+		width 					: 16.8em
+
+	#contact-box
+		height 					: 5.33em
+
+	#ewe
+		top 					: 15em
+
+	#port-copy
+		width 					: 19em
+
+// Night-mode Color styles
+
+// .night-mode ~ all color values	
