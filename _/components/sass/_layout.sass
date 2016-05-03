@@ -10,7 +10,6 @@
 
 #logo  	
 	color              			: $g3
-	z-index            			: 100
 	cursor 						: pointer
 	transition 					: all .5s ease
 
@@ -33,7 +32,7 @@
 	height 						: 6.5em
 	transition 					: all .8s ease
 	text
-		font-size 				: .85em
+		font-size 				: $body-text 
 
 #contact-menu
 	position 					: absolute
@@ -63,7 +62,7 @@
 	right 						: 0
 	top 						: $top
 	text
-		font-size 				: 7.5em
+		font-size 				: 6.5em
 		
 	a
 		&:hover
@@ -93,17 +92,17 @@
 
 // Main Content
 
-#bio
-	position 					: absolute
-	top 						: 1em
-	left 						: 1em
-	right 						: 15em
-	bottom 						: 10em
-	width 						: 25em
-	overflow 					: scroll
-	:before
-		content 				: ""
-		box-shadow 				: inset 0px -22px 11px 10px #000000
+//#bio
+//	position 					: absolute
+//	top 						: 1em
+//	left 						: 1em
+//	right 						: 15em
+//	bottom 						: 10em
+//	width 						: 25em
+//	overflow 					: scroll
+//	:before
+//		content 				: ""
+//		box-shadow 				: inset 0px -22px 11px 10px #000000
 
 #prof
 	cursor 						: default
@@ -112,12 +111,12 @@
 	top 						: $top
 	left 						: $left
 	text
-		font-size 				: 3.5em
+		font-size 				: 3.3em
 		font-weight 			: 900
 		color 					: $g3
 		transition 				: all .8s ease
 	.subhead
-		font-size 				: 2.5em
+		font-size 				: 2.3em
 		font-weight 			: 300
 
 #port-copy
@@ -134,24 +133,26 @@
 	.subhead
 		font-size 				: 2.5em
 		font-weight 			: 300
-
-#bio
-	overflow 					: scroll
-	margin-left 				: $left
-	margin-right 				: $right
-	max-width 					: 40em
-	max-height 					: 25em
+	.text-bold
+		font-size 				: 2.5em
+		font-weight 			: 900
+//#bio
+//	overflow 					: scroll
+//	margin-left 				: $left
+//	margin-right 				: $right
+//	max-width 					: 40em
+//	max-height 					: 25em
 
 #ewe
 	position 					: absolute
-	top 						: 15em
+	top 						: 14.5em
 	width 						: 100%
 	left						: 0
 	transition 					: all .8s ease
 
 #contact-box
 	position 					: absolute
-	right 						: 0
+	right 						: $right
 	bottom 						: 10em
 	height 						: 10em
 	transition 					: all .8s ease
@@ -190,8 +191,7 @@
 	font-size 					: 2.5em
 	font-weight 				: 300
 
-.text-bold
-	font-weight 				: 900
+
 
 // Responsive
 
@@ -199,7 +199,7 @@
 @media (max-width: $screen-sm-max)
 
 	#logo-group
-		width 					: 6em
+		width 					: 5.5em
 		position 				: absolute
 		bottom  				: 0.5em
 		left 					: 0
@@ -207,28 +207,28 @@
 	#main-menu
 		right 					: $xs-right
 		bottom 					: $xs-bottom
-		height 					: 5em
+		height 					: 4.5em
 
 	#hire-me-et
 		position 				: absolute
-		width 					: 9.4em
+		width 					: 8.3em
 		right 					: 0
 		top 					: $xs-top
 		text
-			font-size 			: 7.5em
+			font-size 			: 6.6em
 
 	#contact-menu
 		right 						: $xs-right
 		bottom 						: $xs-bottom
-		height 						: 5em
+		height 						: 4.51em
 		text
 			font-size 				: 2.18em
 
 	#contact-box
 		position 					: absolute
-		right 						: 0
+		right 						: $xs-right
 		bottom 						: 6.3em
-		height 						: 6em
+		height 						: 4.68em
 
 	#contact-info 
 		font-size 					: 4.5em
@@ -237,7 +237,7 @@
 		transition 					: all .8s ease
 
 	#prof
-		width 						: 20em
+		width 						: 18.3em
 		top 						: $xs-top
 		left 						: $xs-left
 		text
@@ -251,20 +251,22 @@
 
 	#port-copy
 		position 					: absolute
-		width 						: 20em
+		width 						: 15.1em
 		top 						: $xs-top
 		left 						: $xs-left
 		text
 			font-size 				: 3.5em
 			font-weight 			: 900
-			color 					: $g3
 			transition 				: all .8s ease
 		.subhead
 			font-size 				: 2.5em
 			font-weight 			: 300
+		.text-bold
+			font-size 				: 2.5em
+			font-weight 			: 900
 
 	#ewe
-		top   						: 17em
+		top   						: 15.1em
 		left						: 0
 		width 						: 100%
 
@@ -277,9 +279,10 @@
 @media (min-width: $screen-lg-min)
 
 	#ewe
-		top   					: 14.5em
+		top   					: 12.5em
 		left					: 0
 		width 					: 100%
+
 
 @media (max-height: $height-sm-min )
 
@@ -292,25 +295,29 @@
 @media (max-width: $screen-ip5 )
 
 	#logo-group
-		width 					: 5.23em
+		width 					: 4.4em
 
 	#main-menu
-		height 					: 4.4em
+		height 					: 4em
 
 	#hire-me-et
-		width 					: 8.23em
+		width 					: 7.8em
 
 	#prof
-		width 					: 16.8em
+		width 					: 14.6em
 
 	#contact-box
-		height 					: 5.33em
+		height 					: 4.13em
+		bottom 					: 5.5em
 
 	#ewe
-		top 					: 15em
+		top 					: 12.8em
 
 	#port-copy
-		width 					: 19em
+		width 					: 14em
+
+	#contact-menu
+		height 					: 4em
 
 // Night-mode Color styles
 
