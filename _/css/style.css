@@ -11,7 +11,7 @@ body {
   font-family: "Lato", san-serif;
   font-weight: 700;
   text-transform: uppercase;
-  max-width: 1200px;
+  margin: 0;
 }
 
 /* line 14, ../components/sass/_base.sass */
@@ -85,7 +85,7 @@ svg text {
 /* line 3, ../components/sass/_layout.sass */
 #logo-group {
   z-index: 100;
-  width: 7em;
+  width: 6.5em;
   position: absolute;
   bottom: 0.5em;
   left: 0;
@@ -96,7 +96,7 @@ svg text {
 #logo {
   color: #2C2C2C;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: 0;
 }
 
 /* line 18, ../components/sass/_layout.sass */
@@ -119,7 +119,7 @@ svg text {
   position: absolute;
   right: 1em;
   bottom: 1.25em;
-  height: 6.5em;
+  height: 6em;
   transition: all 0.8s ease;
 }
 /* line 34, ../components/sass/_layout.sass */
@@ -155,7 +155,7 @@ svg text {
 #hire-me-et {
   transition: all 0.8s ease;
   position: absolute;
-  width: 12em;
+  width: 10.8em;
   right: 0;
   top: 1.15em;
 }
@@ -168,13 +168,13 @@ svg text {
   text-decoration: none;
 }
 
-/* line 74, ../components/sass/_layout.sass */
+/* line 73, ../components/sass/_layout.sass */
 #hire-me:hover .elip {
   fill: white;
   transition: all 0.2s ease;
 }
 
-/* line 79, ../components/sass/_layout.sass */
+/* line 77, ../components/sass/_layout.sass */
 .out {
   -ms-transform: translate(30px, 0px);
   -webkit-transform: translate(30px, 0px);
@@ -183,7 +183,7 @@ svg text {
   opacity: 0;
 }
 
-/* line 86, ../components/sass/_layout.sass */
+/* line 84, ../components/sass/_layout.sass */
 .out-right {
   -ms-transform: translate(-30px, 0px);
   -webkit-transform: translate(-30px, 0px);
@@ -192,7 +192,7 @@ svg text {
   opacity: 0;
 }
 
-/* line 107, ../components/sass/_layout.sass */
+/* line 91, ../components/sass/_layout.sass */
 #prof {
   cursor: default;
   position: absolute;
@@ -200,20 +200,20 @@ svg text {
   top: 1.15em;
   left: 1em;
 }
-/* line 113, ../components/sass/_layout.sass */
+/* line 97, ../components/sass/_layout.sass */
 #prof text {
   font-size: 3.3em;
   font-weight: 900;
   color: #2C2C2C;
   transition: all 0.8s ease;
 }
-/* line 118, ../components/sass/_layout.sass */
+/* line 102, ../components/sass/_layout.sass */
 #prof .subhead {
   font-size: 2.3em;
   font-weight: 300;
 }
 
-/* line 122, ../components/sass/_layout.sass */
+/* line 106, ../components/sass/_layout.sass */
 #port-copy {
   cursor: default;
   position: absolute;
@@ -221,34 +221,39 @@ svg text {
   top: 1.15em;
   left: 1em;
 }
-/* line 128, ../components/sass/_layout.sass */
+/* line 112, ../components/sass/_layout.sass */
 #port-copy text {
   font-size: 3.5em;
   font-weight: 900;
   color: #2C2C2C;
   transition: all 0.8s ease;
 }
-/* line 133, ../components/sass/_layout.sass */
+/* line 117, ../components/sass/_layout.sass */
 #port-copy .subhead {
   font-size: 2.5em;
   font-weight: 300;
 }
-/* line 136, ../components/sass/_layout.sass */
+/* line 120, ../components/sass/_layout.sass */
 #port-copy .text-bold {
   font-size: 2.5em;
   font-weight: 900;
 }
 
-/* line 146, ../components/sass/_layout.sass */
-#ewe {
-  position: absolute;
-  top: 14.5em;
+/* line 124, ../components/sass/_layout.sass */
+#ewe-contain {
+  display: flex;
+  align-items: center;
+  height: 95vh;
   width: 100%;
-  left: 0;
+}
+
+/* line 130, ../components/sass/_layout.sass */
+#ewe {
+  width: 100%;
   transition: all 0.8s ease;
 }
 
-/* line 153, ../components/sass/_layout.sass */
+/* line 134, ../components/sass/_layout.sass */
 #contact-box {
   position: absolute;
   right: 1em;
@@ -257,7 +262,7 @@ svg text {
   transition: all 0.8s ease;
 }
 
-/* line 160, ../components/sass/_layout.sass */
+/* line 141, ../components/sass/_layout.sass */
 #contact-info {
   font-size: 4.5em;
   font-weight: 900;
@@ -265,7 +270,7 @@ svg text {
   transition: all 0.8s ease;
 }
 
-/* line 166, ../components/sass/_layout.sass */
+/* line 147, ../components/sass/_layout.sass */
 #chris,
 #space,
 #at,
@@ -278,33 +283,34 @@ svg text {
   display: block;
 }
 
-/* line 177, ../components/sass/_layout.sass */
+/* line 158, ../components/sass/_layout.sass */
 .dim {
   color: #DDDEDF;
   transition: all 0.8s ease;
   opacity: 0.05;
 }
 
-/* line 182, ../components/sass/_layout.sass */
+/* line 163, ../components/sass/_layout.sass */
 #cjd-logo-box {
-  width: 14em;
+  position: absolute;
+  width: 13em;
   top: 1.15em;
   left: 1em;
 }
 
-/* line 187, ../components/sass/_layout.sass */
+/* line 169, ../components/sass/_layout.sass */
 #cjd-logo {
   color: #DDDEDF;
 }
 
-/* line 190, ../components/sass/_layout.sass */
+/* line 172, ../components/sass/_layout.sass */
 .subhead {
   font-size: 2.5em;
   font-weight: 300;
 }
 
 @media (max-width: 991px) {
-  /* line 201, ../components/sass/_layout.sass */
+  /* line 183, ../components/sass/_layout.sass */
   #logo-group {
     width: 5.5em;
     position: absolute;
@@ -312,37 +318,37 @@ svg text {
     left: 0;
   }
 
-  /* line 207, ../components/sass/_layout.sass */
+  /* line 189, ../components/sass/_layout.sass */
   #main-menu {
     right: 0.75em;
     bottom: 0.75em;
     height: 4.5em;
   }
 
-  /* line 212, ../components/sass/_layout.sass */
+  /* line 194, ../components/sass/_layout.sass */
   #hire-me-et {
     position: absolute;
-    width: 8.3em;
+    width: 8.7em;
     right: 0;
     top: 0.75em;
   }
-  /* line 217, ../components/sass/_layout.sass */
+  /* line 199, ../components/sass/_layout.sass */
   #hire-me-et text {
     font-size: 6.6em;
   }
 
-  /* line 220, ../components/sass/_layout.sass */
+  /* line 202, ../components/sass/_layout.sass */
   #contact-menu {
     right: 0.75em;
     bottom: 0.75em;
     height: 4.51em;
   }
-  /* line 224, ../components/sass/_layout.sass */
+  /* line 206, ../components/sass/_layout.sass */
   #contact-menu text {
     font-size: 2.18em;
   }
 
-  /* line 227, ../components/sass/_layout.sass */
+  /* line 209, ../components/sass/_layout.sass */
   #contact-box {
     position: absolute;
     right: 0.75em;
@@ -350,7 +356,7 @@ svg text {
     height: 4.68em;
   }
 
-  /* line 233, ../components/sass/_layout.sass */
+  /* line 215, ../components/sass/_layout.sass */
   #contact-info {
     font-size: 4.5em;
     font-weight: 900;
@@ -358,115 +364,89 @@ svg text {
     transition: all 0.8s ease;
   }
 
-  /* line 239, ../components/sass/_layout.sass */
+  /* line 221, ../components/sass/_layout.sass */
   #prof {
     width: 18.3em;
     top: 0.75em;
     left: 0.75em;
   }
-  /* line 243, ../components/sass/_layout.sass */
+  /* line 225, ../components/sass/_layout.sass */
   #prof text {
     font-size: 3.5em;
     font-weight: 900;
     color: #2C2C2C;
     transition: all 0.8s ease;
   }
-  /* line 248, ../components/sass/_layout.sass */
+  /* line 230, ../components/sass/_layout.sass */
   #prof .subhead {
     font-size: 2.5em;
     font-weight: 300;
   }
 
-  /* line 252, ../components/sass/_layout.sass */
+  /* line 234, ../components/sass/_layout.sass */
   #port-copy {
     position: absolute;
-    width: 15.1em;
+    width: 16.3em;
     top: 0.75em;
     left: 0.75em;
   }
-  /* line 257, ../components/sass/_layout.sass */
+  /* line 239, ../components/sass/_layout.sass */
   #port-copy text {
     font-size: 3.5em;
     font-weight: 900;
     transition: all 0.8s ease;
   }
-  /* line 261, ../components/sass/_layout.sass */
+  /* line 243, ../components/sass/_layout.sass */
   #port-copy .subhead {
     font-size: 2.5em;
     font-weight: 300;
   }
-  /* line 264, ../components/sass/_layout.sass */
+  /* line 246, ../components/sass/_layout.sass */
   #port-copy .text-bold {
     font-size: 2.5em;
     font-weight: 900;
   }
 
-  /* line 268, ../components/sass/_layout.sass */
-  #ewe {
-    top: 15.1em;
-    left: 0;
-    width: 100%;
-  }
-
-  /* line 273, ../components/sass/_layout.sass */
+  /* line 251, ../components/sass/_layout.sass */
   #cjd-logo-box {
     width: 9em;
     top: 0.75em;
     left: 0.75em;
   }
 }
-@media (min-width: 1200px) {
-  /* line 281, ../components/sass/_layout.sass */
-  #ewe {
-    top: 12.5em;
-    left: 0;
-    width: 100%;
-  }
-}
-@media (max-height: 411px) {
-  /* line 289, ../components/sass/_layout.sass */
-  #ewe {
-    top: 5.8em;
-  }
-}
 @media (max-width: 320px) {
-  /* line 297, ../components/sass/_layout.sass */
+  /* line 270, ../components/sass/_layout.sass */
   #logo-group {
     width: 4.4em;
   }
 
-  /* line 300, ../components/sass/_layout.sass */
+  /* line 273, ../components/sass/_layout.sass */
   #main-menu {
     height: 4em;
   }
 
-  /* line 303, ../components/sass/_layout.sass */
+  /* line 276, ../components/sass/_layout.sass */
   #hire-me-et {
     width: 7.8em;
   }
 
-  /* line 306, ../components/sass/_layout.sass */
+  /* line 279, ../components/sass/_layout.sass */
   #prof {
     width: 14.6em;
   }
 
-  /* line 309, ../components/sass/_layout.sass */
+  /* line 282, ../components/sass/_layout.sass */
   #contact-box {
     height: 4.13em;
     bottom: 5.5em;
   }
 
-  /* line 313, ../components/sass/_layout.sass */
-  #ewe {
-    top: 12.8em;
-  }
-
-  /* line 316, ../components/sass/_layout.sass */
+  /* line 286, ../components/sass/_layout.sass */
   #port-copy {
     width: 14em;
   }
 
-  /* line 319, ../components/sass/_layout.sass */
+  /* line 289, ../components/sass/_layout.sass */
   #contact-menu {
     height: 4em;
   }

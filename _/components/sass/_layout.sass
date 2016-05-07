@@ -2,7 +2,7 @@
 
 #logo-group
 	z-index            			: 100
-	width 						: 7em
+	width 						: 6.5em
 	position 					: absolute
 	bottom  					: 0.5em
 	left 						: 0
@@ -11,7 +11,7 @@
 #logo  	
 	color              			: $g3
 	cursor 						: pointer
-	transition 					: all .5s ease
+	transition 					: 0
 
 // Main Menu
 
@@ -29,7 +29,7 @@
 	position 					: absolute
 	right 						: $right
 	bottom 						: $bottom
-	height 						: 6.5em
+	height 						: 6em
 	transition 					: all .8s ease
 	text
 		font-size 				: $body-text 
@@ -58,7 +58,7 @@
 #hire-me-et
 	transition 					: all .8s ease
 	position 					: absolute
-	width 						: 12em
+	width 						: 10.8em
 	right 						: 0
 	top 						: $top
 	text
@@ -68,14 +68,12 @@
 		&:hover
 			text-decoration 		: none
 	
-
 #hire-me
 	&:hover
 		.elip
 			fill 				: white	
 			transition 			: all .2s ease
 	
-
 .out
 	-ms-transform 				: translate(30px,0px)
 	-webkit-transform 			: translate(30px,0px)
@@ -89,20 +87,6 @@
 	transform 					: translate(-30px,0px)
 	transition 					: all .8s ease
 	opacity 					: 0
-
-// Main Content
-
-//#bio
-//	position 					: absolute
-//	top 						: 1em
-//	left 						: 1em
-//	right 						: 15em
-//	bottom 						: 10em
-//	width 						: 25em
-//	overflow 					: scroll
-//	:before
-//		content 				: ""
-//		box-shadow 				: inset 0px -22px 11px 10px #000000
 
 #prof
 	cursor 						: default
@@ -136,18 +120,15 @@
 	.text-bold
 		font-size 				: 2.5em
 		font-weight 			: 900
-//#bio
-//	overflow 					: scroll
-//	margin-left 				: $left
-//	margin-right 				: $right
-//	max-width 					: 40em
-//	max-height 					: 25em
+
+#ewe-contain
+	display 					: flex
+	align-items 				: center
+	height 						: 95vh
+	width 						: 100%
 
 #ewe
-	position 					: absolute
-	top 						: 14.5em
 	width 						: 100%
-	left						: 0
 	transition 					: all .8s ease
 
 #contact-box
@@ -180,7 +161,8 @@
 	opacity 					: .05
 
 #cjd-logo-box
-	width 						: 14em
+	position 					: absolute
+	width 						: 13em
 	top 						: $top
 	left 						: $left
 
@@ -211,7 +193,7 @@
 
 	#hire-me-et
 		position 				: absolute
-		width 					: 8.3em
+		width 					: 8.7em
 		right 					: 0
 		top 					: $xs-top
 		text
@@ -251,7 +233,7 @@
 
 	#port-copy
 		position 					: absolute
-		width 						: 15.1em
+		width 						: 16.3em
 		top 						: $xs-top
 		left 						: $xs-left
 		text
@@ -265,10 +247,6 @@
 			font-size 				: 2.5em
 			font-weight 			: 900
 
-	#ewe
-		top   						: 15.1em
-		left						: 0
-		width 						: 100%
 
 	#cjd-logo-box
 		width 						: 9em
@@ -278,16 +256,11 @@
 
 @media (min-width: $screen-lg-min)
 
-	#ewe
-		top   					: 12.5em
-		left					: 0
-		width 					: 100%
+
 
 
 @media (max-height: $height-sm-min )
 
-	#ewe
-		top 					: 5.8em
 
 
 
@@ -309,9 +282,6 @@
 	#contact-box
 		height 					: 4.13em
 		bottom 					: 5.5em
-
-	#ewe
-		top 					: 12.8em
 
 	#port-copy
 		width 					: 14em
