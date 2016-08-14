@@ -132,7 +132,7 @@ svg text {
   position: absolute;
   right: 1em;
   bottom: 1.25em;
-  height: 6.5em;
+  height: 6em;
   transition: all 0.8s ease;
 }
 /* line 42, ../components/sass/_layout.sass */
@@ -258,7 +258,7 @@ svg text {
   position: absolute;
   right: 1em;
   bottom: 10em;
-  height: 10em;
+  height: 8em;
   transition: all 0.8s ease;
 }
 

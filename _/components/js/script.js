@@ -154,10 +154,10 @@ $(document).ready(function() {
 					}, 900);
 					setTimeout(function() {
 							hire_me.removeClass(' out ');
-					}, 1100);
+					}, 1000);
 					setTimeout(function() {
 							fire();
-					}, 1500);
+					}, 1000);
 		};
 
 		function innout() {
@@ -208,7 +208,6 @@ $(document).ready(function() {
 							logo.animate ({
 								d: p5
 							}, 50, mina.easeinout);
-							fire();	
 						}, 400);
 				}, 600);
 		};
